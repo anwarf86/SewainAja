@@ -1,0 +1,254 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+main {
+    background-color: #FFF9F4;
+}
+.navbar a {
+    padding: 10px;
+}
+.nav-item a {
+	color: #2A2550 !important;
+}
+.nav-item a:hover{
+	font-weight: bold;
+}
+h1 {
+	font-weight: bold !important;
+}
+.button {
+	padding: 5px 15px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.btn-masuk {
+	background-color: white;
+	color: #FF7700;
+	border: 1px solid #2A2550;
+}
+.btn-custom {
+	background-color: #2A2550;
+	color: white;
+	border: none;
+	padding: 7px 18px;
+}
+.btn-masuk:hover {
+	background-color: #2A2550;
+	color: white;
+}
+.btn-custom:hover {
+	background-color: #524b81;
+}
+.hero {
+	background-color: #FFF9F4;
+}
+.hero-content a , .why a{
+    padding: 14px;
+}
+.rules {
+	background-color: #FFF9F4;
+}
+.why-item {
+	width: 100%;
+}
+.syarat-title{
+	background-color: #D9D9D9;
+	border-radius: 10px 10px 0px 0px;
+}
+.syarat {
+	border-radius: 10px 10px 0px 0px !important;
+}
+.alur-pesan li{
+    display: inline;
+}
+.cari_kendaraan {
+    width: 50%;
+}
+.shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cari_kendaraan hr {
+    margin-top: -5px;
+}
+.wilayah {
+    width: 50% !important;
+}
+h3 {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    color: #2A2550 !important;
+}
+.submit , .lanjutkan , .bayar{
+    float: right;
+    color: white;
+    background-color: #FF7700;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.lanjutkan {
+    float: left;
+    padding: 5px 25px;
+}
+.onPage {
+    font-weight: 700;
+}
+.lanjutkan:hover , .bayar:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #f89a48;
+}
+.submit:hover {
+    background-color: #f89a48;
+}
+.filter {
+    flex-grow: 1;
+}
+.filter input {
+    display: inline-block;
+}
+.form-group hr {
+    margin-top: -4px;
+    margin-bottom: 2px;
+}
+.hasil_pencarian {
+    flex-grow: 3;
+    margin-left: 10px;
+}
+.item-hasil .konten-tengah{
+    margin-left: 20px;
+    flex-grow: 1;
+}
+.item-hasil .konten-kanan{
+    flex-grow: 2;
+}
+.konten-tengah p{
+    line-height: 0em;
+}
+.konten-kanan p {
+    line-height: 0.7em;
+}
+.konten-kanan a {
+    padding: 10px;
+}
+.item-hasil i {
+    font-size: 16px;
+}
+.harga {
+    color: #FF7700;
+    font-size: 20px;
+    font-weight: 600;
+}
+.title-harga-total{
+    color: #777777;
+    margin-bottom: 1px;
+}
+.id_transaksi {
+    font-weight: bold;
+}
+.detail-terms {
+    width: 75%;
+}
+.detail-terms .foto-kendaraan img {
+    width: 230px;
+}
+.ringkasan-sewa {
+    width: 25%;
+    height: 350px;
+}
+.ringkasan-sewa a {
+    padding: 10px;
+}
+.ringkasan-sewa .foto-kendaraan img {
+    width: 80px;
+}
+.detail-terms p {
+    line-height: 0em;
+}
+.title-item {
+    font-weight: 600;
+    font-size: 17px;
+    color: #2A2550;
+}
+.konfirmasi {
+    max-width: 50%;
+}
+.btn-konfirmasi a {
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+.selesai {
+    width: 300px;
+}
+.selesai i {
+    width: 50%;
+    font-size:8em;
+    color: white;
+    padding: 5px;
+    background-color: #0fe733;
+    border-radius: 100px;
+}
+.button-whatsapp i {
+    width: 100% !important;
+}
+.button-whatsapp a {
+    padding: 14px 0px;
+}
+.laporkan-caption {
+    font-size: 24px;
+    line-height: 28px;
+    color: #5F5F5F;
+    font-weight: 500;
+}
+.laporkan-content {
+    width: 100%;
+}
+.laporkan-contact {
+    width: 100%;
+}
+.laporkan .alamat {
+    background-color: #C0FFBB;;
+}
+.laporkan .email {
+    background-color: #BBFBFF;
+}
+.laporkan .telepon {
+    background-color: #BBCEFF;;
+}
+.laporkan-contact p {
+    margin-bottom: 0;
+}
+.masuk , .daftar{
+    width: 350px;
+}
+.masuk hr, .daftar hr {
+    margin-top: -5px;
+}
+.masuk h3, .daftar h3 {
+    font-size: 30px !important;
+}
+.faq-list {
+    width: 60%;
+}
+.faq-item {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px !important;
+}
+.question {
+    font-size: 24px;
+    font-weight: 600;
+}
+footer {
+	background-color: #2A2550;
+	color: white;
+}
+.footer-medsos a {
+    color: white;
+    padding: 12px;
+}
+.footer-logo a {
+    padding: 14px;
+}
