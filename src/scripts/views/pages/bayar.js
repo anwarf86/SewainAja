@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 const Bayar = {
   async render() {
     return `

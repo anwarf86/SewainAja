@@ -12,5 +12,12 @@
 			"sourceType": "module"
 	},
 	"rules": {
+		"linebreak-style":"off",
+        "prefer-promise-reject-errors":"off",
+        "import/extensions":"off",
+        "no-underscore-dangle":"off",
+        "no-unused-vars":"off",
+        "no-tabs":"off",
+        "import/no-unresolved":"off"
 	}
 }

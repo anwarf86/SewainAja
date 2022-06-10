@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 const Selesai = {
   async render() {
     return `
