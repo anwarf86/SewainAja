@@ -23,10 +23,6 @@ const Selesai = {
 		</div>
 		`;
   },
-
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
-  },
 };
 
 export default Selesai;
