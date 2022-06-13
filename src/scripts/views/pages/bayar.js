@@ -11,18 +11,18 @@ const Bayar = {
 		</ol>
 		<hr>
 
-		<div class="d-flex">
+		<div class="d-flex bayar-content">
 			<div class="card detail-terms p-3">
-				<div class="d-flex">
+				<div class="d-flex foto-bayar">
 					<div class="foto-kendaraan">
 						<img src="mobil_1.png" alt="">
 					</div>
 					<div class="bayar-detail-kendaraan ml-4">
 						<h3>Toyota Agya</h3>
 						<h3>Pemilik : Bambang Santoso</h3>
-						<p class="pt-4">Manual</p>
+						<p class="pt-2"><i class="material-icons">directions_car</i> Manual</p>
 						<p><i class="material-icons">airline_seat_recline_normal</i> 5 Orang</p>
-						<p>2 Koper</p>
+						<p><i class="material-icons">business_center</i> 2 Koper</p>
 						<p><i class="material-icons">ac_unit</i> AC</p>
 					</div>
 				</div>
@@ -52,7 +52,7 @@ const Bayar = {
 				</div>
 			</div>
 			<div class="card ringkasan-sewa shadow p-3 ml-4">
-				<div class="d-flex">
+				<div class="d-flex foto-bayar">
 					<div class="foto-kendaraan">
 						<img src="mobil_1.png" alt="">
 					</div>
