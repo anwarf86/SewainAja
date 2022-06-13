@@ -1,0 +1,146 @@
+@media screen and (max-width: 1000px) {
+	.hero-image img {
+		max-width: 300px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	.why-image img {
+		max-width: 200px;
+	}
+}
+@media screen and (max-width: 990px) {
+	.foto-bayar {
+		flex-direction: column;
+	}
+	.foto-bayar .bayar-detail-kendaraan {
+		margin: 0 !important;
+	}
+}
+@media screen and (max-width: 980px) {
+	.item-hasil {
+		flex-wrap: wrap;
+	}
+	.foto-kendaraan {
+		width: 50%;
+	}
+	.konten-tengah {
+		width: 40%;
+	}
+	.konten-kanan {
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 770px) {
+	.why .container {
+		flex-direction: column;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	p {
+		font-size: 18px;
+	}
+	.foto-kendaraan {
+		width: 100%;
+	}
+	.konten-tengah {
+		padding-top: 10px;
+	}
+	.filter .btn-group {
+		display: flex;
+		flex-direction: column;
+	}
+	.reset {
+		margin-top: 10px;
+	}
+	.submit {
+		float: left;
+		margin-top: 10px;
+	}
+	.wilayah {
+		width: 100% !important;
+	}
+	.bayar-content {
+		flex-direction: column;
+	}
+	.detail-terms , .ringkasan-sewa {
+		width: 100%;
+		margin-left: 0 !important;
+	}
+	.ringkasan-sewa {
+		margin-top: 20px;
+	}
+	.ringkasan-sewa .foto-bayar {
+		flex-direction: row;
+	}
+	.ringkasan-sewa .foto-bayar .foto-kendaraan {
+		width: 30%;
+	}
+	.konfirmasi {
+		max-width: 100% !important;
+	}
+	.laporkan {
+		flex-direction: column;
+	}
+	.laporkan-content {
+		margin-bottom: 20px;
+	}
+	.faq-list {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 610px) {
+	.footer .container {
+		flex-direction: column;
+	}
+	.footer-address {
+		margin-left: 0 !important;
+		text-align: center !important;
+	}
+}
+@media screen and (max-width: 580px) {
+	.rules .container {
+		flex-direction: column;
+	}
+	.syarat {
+		margin-right: 0 !important;
+		margin-top: 10px;
+	}
+	.hero .container {
+		flex-direction: column-reverse;
+	}
+	.hero-image , .hero-content{
+		margin: auto;
+	}
+	.hero-content {
+		width: 100% !important;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 520px) {
+	.footer .container {
+		flex-direction: column;
+	}
+	.filter-hasil {
+		flex-direction: column;
+	}
+	.cari_kendaraan {
+		width: 80%;
+	}
+	.submit {
+		float: right;
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 450px) {
+	.submit {
+		float: left;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.masuk , .daftar {
+		max-width: 100% !important;
+	}
+}
