@@ -5,8 +5,9 @@ const CariKendaraan = {
       <div class="container pt-3 pb-5">
 				<ol class="alur-pesan">
 					<li class="onPage">1. Pilih Kendaraan  >  </li>
-					<li>2. Konfirmasi Order  >  </li>
-					<li>3. Selesai</li>
+					<li>2. Bayar  >  </li>
+					<li>3. Konfirmasi Order  >  </li>
+					<li>4. Selesai</li>
 				</ol>
 				<hr>
 
@@ -44,7 +45,7 @@ const CariKendaraan = {
 					</form>
 				</div>
 
-				<div class="d-flex justify-content-between">
+				<div class="d-flex justify-content-between filter-hasil">
 					<div class="card filter p-3">
 						<h3><i class="material-icons">filter_list</i> Filter</h3>
 						<form>
@@ -77,23 +78,23 @@ const CariKendaraan = {
 							</div>
 							<div class="btn-group" role="group" aria-label="Basic example">
 								<button type="submit" class="btn btn-primary">Terapkan</button>
-								<button type="reset" class="btn btn-secondary">Reset</button>
+								<button type="reset" class="btn btn-secondary reset">Reset</button>
 							</div>
 						</form>
 					</div>
 					<div class="hasil_pencarian p-2">
 						<p><span id="total_hasil">3</span><span id="jenis"> Mobil</span> ditemukan</p>
 						<div class="list-hasil">
-							<div class="card item-hasil p-3">
-								<div class="d-flex">
+							<div class="card p-3">
+								<div class="d-flex item-hasil">
 									<div class="foto-kendaraan">
 										<img src="mobil_1.png" alt="">
 									</div>
 									<div class="konten-tengah">
 										<h3>Toyota Agya</h3>
-										<p class="pt-4">Manual</p>
+										<p class="pt-2"><i class="material-icons">directions_car</i> Manual</p>
 										<p><i class="material-icons">airline_seat_recline_normal</i> 5 Orang</p>
-										<p>2 Koper</p>
+										<p><i class="material-icons">business_center</i> 2 Koper</p>
 										<p><i class="material-icons">ac_unit</i> AC</p>
 									</div>
 									<div class="konten-kanan">
