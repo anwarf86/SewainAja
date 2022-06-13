@@ -17,7 +17,7 @@ const Home = {
           </a>
         </div>
         <div class="hero-image">
-          <img src="hero_image.png" alt="" class="img-fluid">
+          <img src="hero_image.png" alt="">
         </div>
       </div>
     </div>
