@@ -42,8 +42,15 @@ h1 {
 .hero {
 	background-color: #FFF9F4;
 }
+.hero-content , .hero-image {
+    flex-grow: 1;
+}
+.hero-image img {
+    max-width: 100%;
+}
 .hero-content a , .why a{
     padding: 14px;
+    margin-left: -14px;
 }
 .rules {
 	background-color: #FFF9F4;
@@ -155,7 +162,7 @@ h3 {
 }
 .ringkasan-sewa {
     width: 25%;
-    height: 350px;
+    height: fit-content;
 }
 .ringkasan-sewa a {
     padding: 10px;
