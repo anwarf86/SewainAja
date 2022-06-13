@@ -20,10 +20,6 @@ const FAQ = {
     </div>
     `;
   },
-
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
-  },
 };
 
 export default FAQ;
