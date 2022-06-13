@@ -1,10 +1,10 @@
 const Laporkan = {
   async render() {
     return `
-    <div class="container pt-3 pb-5 laporkan">
+    <div class="container pt-3 pb-5">
     <h1 class="text-center">Laporkan</h1>
     <p class="text-center laporkan-caption">Sampaikan saran dan keluhan Anda disini !</p>
-    <div class="d-flex mt-5">
+    <div class="d-flex laporkan mt-5">
       <div class="laporkan-content mr-5">
         <form>
           <div class="form-group">
@@ -40,10 +40,6 @@ const Laporkan = {
     </div>
   </div>
     `;
-  },
-
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
   },
 };
 
