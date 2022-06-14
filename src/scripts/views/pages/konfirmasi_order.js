@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 const KonfirmasiOrder = {
   async render() {
     return `

@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 const CariKendaraan = {
   async render() {
     return `
