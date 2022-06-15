@@ -1,3 +1,33 @@
+import data from '../../data/vechile.json';
+
+const createCarItemTemplate = (Cars) => `
+	<div class="card item-hasil p-3">
+	<div class="d-flex">
+		<div class="foto-kendaraan">
+			<img src="${Cars.foto_kendaraan}" alt="">
+		</div>
+		<div class="konten-tengah">
+			<h3>${Cars.nama_kendaraan}</h3>
+			<p class="pt-4">>${Cars.transmisi}</p>
+			<p><i class="material-icons">airline_seat_recline_normal</i> ${Cars.penumpang} orang</p>
+			<p>${Cars.barang} koper</p>
+			<p><i class="material-icons">ac_unit</i> ${Cars.pendingin}</p>
+		</div>
+		<div class="konten-kanan">
+			<p>Pemilik : ${Cars.pemilik}</p>
+			<p>Alamat : ${Cars.lokasi}</p>
+			<p><span class="harga-sewa">${Cars.BiayaPerHAri}</span> / hari</p>
+			<p>${Cars.posisi}</p>
+			<a href="#/cari_kendaraan/#/bayar" class="lanjutkan">Lanjutkan</a>
+		</div>
+	</div>
+	</div>
+`;
+
+const SelectOption = (Cars) => `
+	<option value="">${Cars.lokasi}</option>
+`;
+
 const CariKendaraan = {
   async render() {
     return `
@@ -30,9 +60,7 @@ const CariKendaraan = {
 							</div>
 							<select class="custom-select" id="pilihWilayah">
 								<option selected>Choose...</option>
-								<option value="1">One</option>
-								<option value="2">Two</option>
-								<option value="3">Three</option>
+								
 							</select>
 						</div>
 
@@ -82,29 +110,8 @@ const CariKendaraan = {
 						</form>
 					</div>
 					<div class="hasil_pencarian p-2">
-						<p><span id="total_hasil">3</span><span id="jenis"> Mobil</span> ditemukan</p>
 						<div class="list-hasil">
-							<div class="card p-3">
-								<div class="d-flex item-hasil">
-									<div class="foto-kendaraan">
-										<img src="mobil_1.png" alt="">
-									</div>
-									<div class="konten-tengah">
-										<h3>Toyota Agya</h3>
-										<p class="pt-2"><i class="material-icons">directions_car</i> Manual</p>
-										<p><i class="material-icons">airline_seat_recline_normal</i> 5 Orang</p>
-										<p><i class="material-icons">business_center</i> 2 Koper</p>
-										<p><i class="material-icons">ac_unit</i> AC</p>
-									</div>
-									<div class="konten-kanan">
-										<p>Pemilik : Bambang Santoso</p>
-										<p>Alamat : Jakarta Selatan</p>
-										<p><span class="harga-sewa">Rp 350.000,-</span> / hari</p>
-										<p>Dalam kota</p>
-										<a href="#/cari_kendaraan/#/bayar" class="lanjutkan">Lanjutkan</a>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -112,9 +119,15 @@ const CariKendaraan = {
       `;
   },
 
-  // async afterRender() {
-
-  // },
+  async afterRender() {
+    const carData = await data.Cars;
+    const vechileContainer = document.querySelector('.list-hasil');
+    const option = document.querySelector('#pilihWilayah');
+    carData.forEach((Cars) => {
+      vechileContainer.innerHTML += createCarItemTemplate(Cars);
+	  option.innerHTML += SelectOption(Cars);
+    });
+  },
 };
 
 export default CariKendaraan;

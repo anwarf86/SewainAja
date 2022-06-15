@@ -1,3 +1,33 @@
+import data from '../../data/sewakan.json';
+
+const sewakanItemTemplate = (sewakan) => `
+<div class="foto-kendaraan">
+          <img src="${sewakan.foto_kendaraan}" alt="">
+        </div>
+        <div class="detail-kendaraan ml-4">
+          <h3>${sewakan.nama_kendaraan}</h3>
+          <ul>
+            <li>Transmisi : <span class="detail-kendaraan-item">${sewakan.transmisi}</span></li>
+            <li>Kapasitas Penumpang : <span class="detail-kendaraan-item">${sewakan.penumpang}</span> orang</li>
+            <li>Kapasitas Barang : <span class="detail-kendaraan-item">${sewakan.barang} </span>koper</li>
+            <li>Nomor WA : <span class="detail-kendaraan-item">${sewakan.no_wa}</span></li>
+            <li>Lokasi : <span class="detail-kendaraan-item">${sewakan.lokasi}</span></li>
+            <li>Biaya sewa per hari : Rp<span class="detail-kendaraan-item">${sewakan.BiayaPerHAri}</span>,-</li>
+          </ul>
+</div>
+`;
+const riwayatItemTemplate = (Riwayat) => `
+<table>
+  <tr>
+    <td>${Riwayat.nama_penyewa}</td>
+    <td>${Riwayat.mulai_sewa}</td>
+    <td>${Riwayat.selesai_sewa}</td>
+    <td>${Riwayat.status}</td>
+  </tr>          
+</table>
+`;
+/*
+ */
 const Sewakan = {
   async render() {
     return `
@@ -6,20 +36,7 @@ const Sewakan = {
       <h2>Kendaraan Anda</h2>
       <hr>
       <div class="d-flex kendaraan-anda-konten">
-        <div class="foto-kendaraan">
-          <img src="mobil_1.png" alt="">
-        </div>
-        <div class="detail-kendaraan ml-4">
-          <h3>Toyota Agya</h3>
-          <ul>
-            <li>Transmisi : <span class="detail-kendaraan-item">Manual</span></li>
-            <li>Kapasitas Penumpang : <span class="detail-kendaraan-item">4</span> orang</li>
-            <li>Kapasitas Barang : <span class="detail-kendaraan-item">2 </span>koper</li>
-            <li>Nomor WA : <span class="detail-kendaraan-item">085894495047</span></li>
-            <li>Lokasi : <span class="detail-kendaraan-item">Jakarta Selatan</span></li>
-            <li>Biaya sewa per hari : Rp<span class="detail-kendaraan-item">350.000</span>,-</li>
-          </ul>
-        </div>
+        
       </div>
       <div class="riwayat-sewa">
         <h3>Riwayat Sewa</h3>
@@ -30,18 +47,11 @@ const Sewakan = {
             <th>Selesai Sewa</th>
             <th>Status Sewa</th>
           </tr>
-          <tr>
-            <td>Bambang Setyo</td>
-            <td>15 Juni 2022</td>
-            <td>17 Juni 2022</td>
-            <td class="berlangsung">Sedang berlangsung</td>
-          </tr>
-          <tr>
-            <td>Rafi Setyawan</td>
-            <td>1 Juni 2022</td>
-            <td>2 Juni 2022</td>
-            <td class="selesai-sewa">Selesai</td>
-          </tr>
+        </table>
+      </div>
+      <div class="isi_riwayat">
+        <table>
+
         </table>
       </div>
     </div>
@@ -86,6 +96,19 @@ const Sewakan = {
     </div>
   </div>
     `;
+  },
+
+  async afterRender() {
+    const sewakanData = await data.sewakan;
+    const riwayatData = await data.Riwayat;
+    const vechileContainer = document.querySelector('.kendaraan-anda-konten');
+    const riwayatContainer = document.querySelector('.isi_riwayat');
+    sewakanData.forEach((sewakan) => {
+      vechileContainer.innerHTML += sewakanItemTemplate(sewakan);
+    });
+    riwayatData.forEach((Riwayat) => {
+      riwayatContainer.innerHTML += riwayatItemTemplate(Riwayat);
+    });
   },
 };
 
