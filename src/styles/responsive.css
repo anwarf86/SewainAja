@@ -16,6 +16,13 @@
 	.foto-bayar .bayar-detail-kendaraan {
 		margin: 0 !important;
 	}
+	.kendaraan-anda-konten {
+		flex-direction: column;
+	}
+	.detail-kendaraan {
+		margin-left: 0 !important;
+		margin-top: 10px;
+	}
 }
 @media screen and (max-width: 980px) {
 	.item-hasil {
@@ -76,6 +83,16 @@
 	}
 	.ringkasan-sewa .foto-bayar .foto-kendaraan {
 		width: 30%;
+	}
+	.sewakan {
+		flex-direction: column;
+	}
+	.kendaraan-anda {
+		max-width: 100%;
+		margin-right: 0 !important;
+	}
+	.tambahkan-kendaraan {
+		margin-top: 20px;
 	}
 	.konfirmasi {
 		max-width: 100% !important;
