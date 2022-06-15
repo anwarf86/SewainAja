@@ -17,12 +17,12 @@ const sewakanItemTemplate = (sewakan) => `
 </div>
 `;
 const riwayatItemTemplate = (Riwayat) => `
-<table>
+<table width="100%">
   <tr>
-    <td>${Riwayat.nama_penyewa}</td>
-    <td>${Riwayat.mulai_sewa}</td>
-    <td>${Riwayat.selesai_sewa}</td>
-    <td>${Riwayat.status}</td>
+    <td width="25%">${Riwayat.nama_penyewa}</td>
+    <td width="25%x">${Riwayat.mulai_sewa}</td>
+    <td width="25%">${Riwayat.selesai_sewa}</td>
+    <td width="25%"">${Riwayat.status}</td>
   </tr>          
 </table>
 `;
@@ -40,12 +40,12 @@ const Sewakan = {
       </div>
       <div class="riwayat-sewa">
         <h3>Riwayat Sewa</h3>
-        <table>
+        <table width="100%">
           <tr>
-            <th>Nama Penyewa</th>
-            <th>Mulai Sewa</th>
-            <th>Selesai Sewa</th>
-            <th>Status Sewa</th>
+            <th width="25%">Nama Penyewa</th>
+            <th width="25%">Mulai Sewa</th>
+            <th width="25%">Selesai Sewa</th>
+            <th width="25%">Status Sewa</th>
           </tr>
         </table>
       </div>
