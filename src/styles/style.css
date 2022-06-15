@@ -197,6 +197,30 @@ h3 {
     background-color: #0fe733;
     border-radius: 100px;
 }
+.kendaraan-anda {
+    height: fit-content;
+}
+.kendaraan-anda ul{
+    list-style-type:none;
+    margin-left: -40px;
+}
+.kendaraan-anda img {
+    width: 200px;
+}
+.sewakan hr {
+    margin-top: -5px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.berlangsung {
+    background-color: #63df44;
+}
+.selesai-sewa {
+    background-color: #fc5050;
+}
 .button-whatsapp i {
     width: 100% !important;
 }
