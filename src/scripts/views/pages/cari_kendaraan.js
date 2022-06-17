@@ -1,8 +1,8 @@
 import data from '../../data/vechile.json';
 
 const createCarItemTemplate = (Cars) => `
-	<div class="card item-hasil p-3">
-	<div class="d-flex">
+	<div class="card p-3 mb-2">
+	<div class="d-flex item-hasil ">
 		<div class="foto-kendaraan">
 			<img src="${Cars.foto_kendaraan}" alt="">
 		</div>
