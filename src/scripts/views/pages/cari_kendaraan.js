@@ -8,9 +8,9 @@ const createCarItemTemplate = (Cars) => `
 		</div>
 		<div class="konten-tengah">
 			<h3>${Cars.nama_kendaraan}</h3>
-			<p class="pt-4">>${Cars.transmisi}</p>
+			<p class="pt-4"><i class="material-icons">directions_car</i> ${Cars.transmisi}</p>
 			<p><i class="material-icons">airline_seat_recline_normal</i> ${Cars.penumpang} orang</p>
-			<p>${Cars.barang} koper</p>
+			<p><i class="material-icons">business_center</i> ${Cars.barang} koper</p>
 			<p><i class="material-icons">ac_unit</i> ${Cars.pendingin}</p>
 		</div>
 		<div class="konten-kanan">
