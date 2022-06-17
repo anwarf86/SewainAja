@@ -20,19 +20,13 @@
             "nama_penyewa":"Ratna Kafi",
             "mulai_sewa":"15-juni-2022",
             "selesai_sewa":"17-juni-2022",
-            "status":"Sedang langsung"
+            "status":"Sedang berlangsung"
         },
         {
             "nama_penyewa":"Randi Septian",
             "mulai_sewa":"1-juni-2022",
             "selesai_sewa":"2-juni-2022",
             "status":"Selesai"
-        },
-        {
-            "nama_penyewa":"Agus Pratama",
-            "mulai_sewa":"20-juni-2022",
-            "selesai_sewa":"23-juni-2022",
-            "status":"Sedang langsung"
         }
     ]
 }
