@@ -24,6 +24,12 @@ const Bayar = {
 						<p><i class="material-icons">business_center</i> 2 Koper</p>
 						<p><i class="material-icons">ac_unit</i> AC</p>
 					</div>
+					<div class="durasi-sewa ml-3">
+						<label for="mulai_sewa"><h3>Mulai Sewa</h3></label><br>
+  						<input type="date" id="mulai_sewa" name="mulai_sewa" class="mb-2"><br>
+						<label for="selesai_sewa"><h3>Selesai Sewa</h3></label><br>
+  						<input type="date" id="selesai_sewa" name="selesai_sewa">
+					</div>
 				</div>
 				<div class="kebijakan">
 					<h3 class="pb-2">Kebijakan</h3>
@@ -72,10 +78,6 @@ const Bayar = {
 		</div>
 	</div>
 		`;
-  },
-
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
   },
 };
 
