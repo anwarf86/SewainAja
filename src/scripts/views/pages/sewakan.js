@@ -1,31 +1,7 @@
 import data from '../../data/sewakan.json';
-
-const sewakanItemTemplate = (sewakan) => `
-<div class="foto-kendaraan">
-          <img src="${sewakan.foto_kendaraan}" alt="">
-        </div>
-        <div class="detail-kendaraan ml-4">
-          <h3>${sewakan.nama_kendaraan}</h3>
-          <ul>
-            <li>Transmisi : <span class="detail-kendaraan-item">${sewakan.transmisi}</span></li>
-            <li>Kapasitas Penumpang : <span class="detail-kendaraan-item">${sewakan.penumpang}</span> orang</li>
-            <li>Kapasitas Barang : <span class="detail-kendaraan-item">${sewakan.barang} </span>koper</li>
-            <li>Nomor WA : <span class="detail-kendaraan-item">${sewakan.no_wa}</span></li>
-            <li>Lokasi : <span class="detail-kendaraan-item">${sewakan.lokasi}</span></li>
-            <li>Biaya sewa per hari : Rp<span class="detail-kendaraan-item">${sewakan.BiayaPerHAri}</span>,-</li>
-          </ul>
-</div>
-`;
-const riwayatItemTemplate = (Riwayat) => `
-<table width="100%">
-  <tr>
-    <td width="25%">${Riwayat.nama_penyewa}</td>
-    <td width="25%x">${Riwayat.mulai_sewa}</td>
-    <td width="25%">${Riwayat.selesai_sewa}</td>
-    <td width="25%"">${Riwayat.status}</td>
-  </tr>          
-</table>
-`;
+import { sewakanItemTemplate } from '../templates/template-views';
+import { riwayatItemTemplate } from '../templates/template-views';
+import SewainAjaSources from '../../data/cardb-source';
 /*
  */
 const Sewakan = {
@@ -35,7 +11,7 @@ const Sewakan = {
     <div class="card kendaraan-anda p-3 mr-3">
       <h2>Kendaraan Anda</h2>
       <hr>
-      <div class="d-flex kendaraan-anda-konten">
+      <div class="d-flex kendaraan_anda_konten">
         
       </div>
       <div class="riwayat-sewa">
@@ -99,15 +75,15 @@ const Sewakan = {
   },
 
   async afterRender() {
-    const sewakanData = await data.sewakan;
-    const riwayatData = await data.Riwayat;
-    const vechileContainer = document.querySelector('.kendaraan-anda-konten');
+    const sewakanData = await SewainAjaSources.sewakan();
+    const riwayatData = await SewainAjaSources.riwayat();
+    const sewakanContainer = document.querySelector('.kendaraan_anda_konten');
     const riwayatContainer = document.querySelector('.isi_riwayat');
     sewakanData.forEach((sewakan) => {
-      vechileContainer.innerHTML += sewakanItemTemplate(sewakan);
+      sewakanContainer.innerHTML += sewakanItemTemplate(sewakan);
     });
-    riwayatData.forEach((Riwayat) => {
-      riwayatContainer.innerHTML += riwayatItemTemplate(Riwayat);
+    riwayatData.forEach((riwayat) => {
+      riwayatContainer.innerHTML += riwayatItemTemplate(riwayat);
     });
   },
 };

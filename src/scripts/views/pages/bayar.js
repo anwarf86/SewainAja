@@ -1,3 +1,7 @@
+import UrlParser from '../../routes/url-parser';
+import SewainAjaSources from '../../data/cardb-source';
+import { bayarCarTemplate } from '../templates/template-views';
+
 const Bayar = {
   async render() {
     return `
@@ -12,25 +16,10 @@ const Bayar = {
 
 		<div class="d-flex bayar-content">
 			<div class="card detail-terms p-3">
-				<div class="d-flex foto-bayar">
-					<div class="foto-kendaraan">
-						<img src="mobil_1.png" alt="">
-					</div>
-					<div class="bayar-detail-kendaraan ml-4">
-						<h3>Toyota Agya</h3>
-						<h3>Pemilik : Bambang Santoso</h3>
-						<p class="pt-2"><i class="material-icons">directions_car</i> Manual</p>
-						<p><i class="material-icons">airline_seat_recline_normal</i> 5 Orang</p>
-						<p><i class="material-icons">business_center</i> 2 Koper</p>
-						<p><i class="material-icons">ac_unit</i> AC</p>
-					</div>
-					<div class="durasi-sewa ml-3">
-						<label for="mulai_sewa"><h3>Mulai Sewa</h3></label><br>
-  						<input type="date" id="mulai_sewa" name="mulai_sewa" class="mb-2"><br>
-						<label for="selesai_sewa"><h3>Selesai Sewa</h3></label><br>
-  						<input type="date" id="selesai_sewa" name="selesai_sewa">
-					</div>
+			
+				<div id="bayarAja">
 				</div>
+
 				<div class="kebijakan">
 					<h3 class="pb-2">Kebijakan</h3>
 					<div class="syarat-rental">
@@ -78,6 +67,12 @@ const Bayar = {
 		</div>
 	</div>
 		`;
+  },
+  async afterRender() {
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const cars = await SewainAjaSources.bayarCar(url.id);
+    const bayarContainer = document.querySelector('#bayarAja');
+    bayarContainer.innerHTML = bayarCarTemplate(cars);
   },
 };
 

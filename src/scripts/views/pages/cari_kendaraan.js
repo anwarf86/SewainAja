@@ -1,32 +1,6 @@
 import data from '../../data/vechile.json';
-
-const createCarItemTemplate = (Cars) => `
-	<div class="card p-3 mb-2">
-	<div class="d-flex item-hasil ">
-		<div class="foto-kendaraan">
-			<img src="${Cars.foto_kendaraan}" alt="">
-		</div>
-		<div class="konten-tengah">
-			<h3>${Cars.nama_kendaraan}</h3>
-			<p class="pt-4"><i class="material-icons">directions_car</i> ${Cars.transmisi}</p>
-			<p><i class="material-icons">airline_seat_recline_normal</i> ${Cars.penumpang} orang</p>
-			<p><i class="material-icons">business_center</i> ${Cars.barang} koper</p>
-			<p><i class="material-icons">ac_unit</i> ${Cars.pendingin}</p>
-		</div>
-		<div class="konten-kanan">
-			<p>Pemilik : ${Cars.pemilik}</p>
-			<p>Alamat : ${Cars.lokasi}</p>
-			<p><span class="harga-sewa">${Cars.BiayaPerHAri}</span> / hari</p>
-			<p>${Cars.posisi}</p>
-			<a href="#/cari_kendaraan/#/bayar" class="lanjutkan">Lanjutkan</a>
-		</div>
-	</div>
-	</div>
-`;
-
-const SelectOption = (Cars) => `
-	<option value="">${Cars.lokasi}</option>
-`;
+import { createCarItemTemplate, SelectOption } from '../templates/template-views';
+import SewainAjaSources from '../../data/cardb-source';
 
 const CariKendaraan = {
   async render() {
@@ -110,7 +84,7 @@ const CariKendaraan = {
 						</form>
 					</div>
 					<div class="hasil_pencarian p-2">
-						<div class="list-hasil">
+						<div class="list-hasil" id="carsData">
 							
 						</div>
 					</div>
@@ -120,12 +94,12 @@ const CariKendaraan = {
   },
 
   async afterRender() {
-    const carData = await data.Cars;
-    const vechileContainer = document.querySelector('.list-hasil');
+    const list = await SewainAjaSources.cars();
+    const vechileContainer = document.querySelector('#carsData');
     const option = document.querySelector('#pilihWilayah');
-    carData.forEach((Cars) => {
-      vechileContainer.innerHTML += createCarItemTemplate(Cars);
-	  option.innerHTML += SelectOption(Cars);
+    list.forEach((cars) => {
+      vechileContainer.innerHTML += createCarItemTemplate(cars);
+	  option.innerHTML += SelectOption(cars);
     });
   },
 };

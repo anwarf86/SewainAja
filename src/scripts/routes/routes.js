@@ -13,7 +13,7 @@ const routes = {
   '/': Home, // default page
   '/home': Home,
   '/cari_kendaraan': CariKendaraan,
-  '/cari_kendaraan/bayar': Bayar,
+  '/bayar/:id': Bayar,
   '/bayar/konfirmasi_order': KonfirmasiOrder,
   '/konfirmasi_order/selesai_transaksi': Selesai,
   '/laporkan': Laporkan,
