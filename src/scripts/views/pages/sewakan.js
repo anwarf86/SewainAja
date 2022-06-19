@@ -1,7 +1,33 @@
-import { sewakanItemTemplate, riwayatItemTemplate } from '../templates/template-views';
 import SewainAjaSources from '../../data/cardb-source';
-/*
- */
+
+const sewakanItemTemplate = (sewakan) => `
+<div class="foto-kendaraan">
+          <img src="${sewakan.foto_kendaraan}" alt="">
+        </div>
+        <div class="detail-kendaraan ml-4">
+          <h3>${sewakan.nama_kendaraan}</h3>
+          <ul>
+            <li>Transmisi : <span class="detail-kendaraan-item">${sewakan.transmisi}</span></li>
+            <li>Kapasitas Penumpang : <span class="detail-kendaraan-item">${sewakan.penumpang}</span> orang</li>
+            <li>Kapasitas Barang : <span class="detail-kendaraan-item">${sewakan.barang} </span>koper</li>
+            <li>Nomor WA : <span class="detail-kendaraan-item">${sewakan.no_wa}</span></li>
+            <li>Lokasi : <span class="detail-kendaraan-item">${sewakan.lokasi}</span></li>
+            <li>Biaya sewa per hari : Rp<span class="detail-kendaraan-item">${sewakan.Biaya}</span>,-</li>
+          </ul>
+</div>
+`;
+
+const riwayatItemTemplate = (riwayat) => `
+<table width="100%">
+  <tr>
+    <td width="25%">${riwayat.nama_penyewa}</td>
+    <td width="25%x">${riwayat.mulai_sewa}</td>
+    <td width="25%">${riwayat.selesai_sewa}</td>
+    <td width="25%"">${riwayat.status}</td>
+  </tr>          
+</table>
+`;
+
 const Sewakan = {
   async render() {
     return `

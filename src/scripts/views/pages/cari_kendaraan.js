@@ -1,5 +1,32 @@
-import { createCarItemTemplate, SelectOption } from '../templates/template-views';
 import SewainAjaSources from '../../data/cardb-source';
+
+const createCarItemTemplate = (cars) => `
+	<div class="card p-3 mb-2">
+        <div class="d-flex item-hasil ">
+            <div class="foto-kendaraan">
+                <img src="${cars.foto_kendaraan}" alt="${cars.nama_kendaraan}">
+            </div>
+            <div class="konten-tengah">
+                <h3>${cars.nama_kendaraan}</h3>
+                <p class="pt-4"><i class="material-icons">directions_car</i> ${cars.transmisi}</p>
+                <p><i class="material-icons">airline_seat_recline_normal</i> ${cars.penumpang} orang</p>
+                <p><i class="material-icons">business_center</i> ${cars.barang} koper</p>
+                <p><i class="material-icons">ac_unit</i> ${cars.isAC}</p>
+            </div>
+            <div class="konten-kanan">
+                <p>Pemilik : ${cars.pemilik}</p>
+                <p>Alamat : ${cars.lokasi}</p>
+                <p><span class="harga-sewa">${cars.Biaya}</span> / hari</p>
+                <p>${cars.posisi}</p>
+                <a href="${`/#/bayar/${cars.id}`}" class="lanjutkan">Lanjutkan</a>
+            </div>
+        </div>
+	</div>
+`;
+
+const SelectOption = (cars) => `
+	<option value="">${cars.lokasi}</option>
+`;
 
 const CariKendaraan = {
   async render() {
