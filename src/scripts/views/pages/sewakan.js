@@ -1,6 +1,4 @@
-import data from '../../data/sewakan.json';
-import { sewakanItemTemplate } from '../templates/template-views';
-import { riwayatItemTemplate } from '../templates/template-views';
+import { sewakanItemTemplate, riwayatItemTemplate } from '../templates/template-views';
 import SewainAjaSources from '../../data/cardb-source';
 /*
  */

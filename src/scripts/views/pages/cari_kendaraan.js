@@ -1,4 +1,3 @@
-import data from '../../data/vechile.json';
 import { createCarItemTemplate, SelectOption } from '../templates/template-views';
 import SewainAjaSources from '../../data/cardb-source';
 
