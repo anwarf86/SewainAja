@@ -111,6 +111,7 @@ h3 {
 }
 .filter {
     flex-grow: 1;
+    height: fit-content;
 }
 .filter input {
     display: inline-block;
