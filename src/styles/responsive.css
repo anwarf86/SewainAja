@@ -16,7 +16,7 @@
 	.foto-bayar .bayar-detail-kendaraan {
 		margin: 0 !important;
 	}
-	.kendaraan-anda-konten {
+	.kendaraan_anda_konten {
 		flex-direction: column;
 	}
 	.detail-kendaraan {
@@ -166,5 +166,8 @@
 @media screen and (max-width: 400px) {
 	.masuk , .daftar {
 		max-width: 100% !important;
+	}
+	footer p {
+		font-size: 14px;
 	}
 }
