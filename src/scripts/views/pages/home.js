@@ -17,7 +17,11 @@ const Home = {
           </a>
         </div>
         <div class="hero-image">
-          <img src="hero_image.png" alt="">
+          <picture>
+            <source type="image/webp" srcset="hero_image.webp">
+            <source type="image/jpeg" srcset="hero_image.png">
+            <img src="hero_image.png" alt="">
+          </picture>
         </div>
       </div>
     </div>
@@ -27,7 +31,11 @@ const Home = {
       <div class="container d-flex justify-content-around">
         <div class="why-item text-center">
           <div class="why-image">
-            <img src="why_image_1.png" alt="">
+            <picture>
+              <source type="image/webp" srcset="why_image_1.webp">
+              <source type="image/jpeg" srcset="why_image_1.png">
+              <img src="why_image_1.png" alt="">
+            </picture>
           </div>
           <div class="why-content mx-auto" style="width: 80%;">
             <h2>Service Berkualitas Dari Partner Terpercaya</h2>
@@ -36,7 +44,11 @@ const Home = {
         </div>
         <div class="why-item text-center">
           <div class="why-image">
-            <img src="why_image_2.png" alt="">
+            <picture>
+              <source type="image/webp" srcset="why_image_2.webp">
+              <source type="image/jpeg" srcset="why_image_2.png">
+              <img src="why_image_2.png" alt="">
+            </picture>
           </div>
           <div class="why-content mx-auto" style="width: 80%;">
             <h2>Rating Pengguna Asli</h2>
@@ -45,7 +57,11 @@ const Home = {
         </div>
         <div class="why-item text-center">
           <div class="why-image">
-            <img src="why_image_3.png" alt="">
+            <picture>
+              <source type="image/webp" srcset="why_image_3.webp">
+              <source type="image/jpeg" srcset="why_image_3.png">
+              <img src="why_image_3.png" alt="">
+            </picture>
           </div>
           <div class="why-content mx-auto pt-4" style="width: 80%;">
             <h2>Mudah & Praktis</h2>
