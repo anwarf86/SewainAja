@@ -78,8 +78,8 @@ const CariKendaraan = {
 						<form>
 							<div class="form-group">
 								<h3>Harga</h3> <hr>
-								<input type="radio" id="semua" name="harga" value="Semua">
-								<label for="semua">Semua</label><br>
+								<input type="radio" id="semua_harga" name="harga" value="Semua_harga">
+								<label for="semua_harga">Semua</label><br>
 								<input type="radio" id="termurah" name="harga" value="Termurah">
 								<label for="termurah">Termurah</label><br>
 								<input type="radio" id="termahal" name="harga" value="Termahal">
@@ -87,17 +87,17 @@ const CariKendaraan = {
 							</div>
 							<div class="form-group">
 								<h3>Kapasitas Penumpang</h3> <hr>
-								<input type="radio" id="semua" name="penumpang" value="Semua">
-								<label for="semua">Semua</label><br>
+								<input type="radio" id="semua_kapasitas_penumpang" name="penumpang" value="Semua_kapasitas_penumpang">
+								<label for="semua_kapasitas_penumpang">Semua</label><br>
 								<input type="radio" id="penumpang_4" name="penumpang" value="penumpang_4">
 								<label for="penumpang_4">4 penumpang</label><br>
 								<input type="radio" id="lebih_dari_4" name="penumpang" value="lebih_dari_4">
-								<label for="lebih_dari_4"></label>> 4 penumpang</label>
+								<label for="lebih_dari_4">> 4 penumpang</label>
 							</div>
 							<div class="form-group">
 								<h3>Transmisi</h3> <hr>
-								<input type="radio" id="semua" name="transmisi" value="Semua">
-								<label for="semua">Semua</label><br>
+								<input type="radio" id="semua_transmisi" name="transmisi" value="Semua_transmisi">
+								<label for="semua_transmisi">Semua</label><br>
 								<input type="radio" id="manual" name="transmisi" value="manual">
 								<label for="manual">Manual</label><br>
 								<input type="radio" id="otomatis" name="transmisi" value="otomatis">
