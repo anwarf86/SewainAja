@@ -20,6 +20,7 @@ const Home = {
           <picture>
             <source type="image/webp" srcset="hero_image.webp">
             <source type="image/jpeg" srcset="hero_image.png">
+
             <img src="hero_image.png" alt="">
           </picture>
         </div>
@@ -34,7 +35,9 @@ const Home = {
             <picture>
               <source type="image/webp" srcset="why_image_1.webp">
               <source type="image/jpeg" srcset="why_image_1.png">
-              <img src="why_image_1.png" alt="">
+              <a href="https://www.freepik.com/free-vector/car-service-abstract-concept-illustration_11667633.htm#query=service%20car%20abstrack&position=13&from_view=search">
+                <img src="why_image_1.png" alt="">
+              </a>
             </picture>
           </div>
           <div class="why-content mx-auto" style="width: 80%;">
@@ -47,7 +50,9 @@ const Home = {
             <picture>
               <source type="image/webp" srcset="why_image_2.webp">
               <source type="image/jpeg" srcset="why_image_2.png">
-              <img src="why_image_2.png" alt="">
+              <a href="https://www.freepik.com/free-vector/man-with-map-smartphone-renting-car-driver-using-car-sharing-app-phone-searching-vehicle-vector-illustration-transport-transportation-urban-traffic-location-app-concept_10613210.htm#query=rent%20car&position=16&from_view=search">
+                <img src="why_image_2.png" alt="">
+              </a>
             </picture>
           </div>
           <div class="why-content mx-auto" style="width: 80%;">
@@ -60,7 +65,9 @@ const Home = {
             <picture>
               <source type="image/webp" srcset="why_image_3.webp">
               <source type="image/jpeg" srcset="why_image_3.png">
-              <img src="why_image_3.png" alt="">
+              <a href="https://www.freepik.com/free-vector/flat-feedback-concept-illustrated_13718569.htm#query=flat%20feedback%20illustration&position=3&from_view=search">
+                <img src="why_image_3.png" alt="">
+              </a>
             </picture>
           </div>
           <div class="why-content mx-auto pt-4" style="width: 80%;">
